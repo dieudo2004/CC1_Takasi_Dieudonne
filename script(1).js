@@ -16,10 +16,8 @@ let cptClick = 1;
 function launchGame(_evt) {
   secretNumber = Math.floor(Math.random() * $maxUsr.value) + 1;
   maxGuesses = Math.ceil(Math.log($maxUsr.value)) + 1;
-  // TODO : compléter ici
 
   $output.innerHTML = "Debut du jeu tu as que " + maxGuesses + " tentatives possibles ";
-  console.log(2);
   $guessBtn.disabled = false;
   
 
@@ -40,7 +38,6 @@ $numUsr.addEventListener("keydown",function(event){
 
 
 function guessHandler() {
-  console.log("fonciton handler")
   if (cptClick ==1){
     $output.innerHTML += "<br>#############################<br>"
     cptClick++
